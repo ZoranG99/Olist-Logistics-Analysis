@@ -123,7 +123,7 @@ CREATE TABLE orders (
 ### 2. DAX: Advanced Performance Metrics
 Calculated the **On-Time Delivery %** dynamically using variables (`VAR`). This measure allows the dashboard to reflect real-time performance regardless of the filters (State, Category, or Date) applied by the user.
 
-```dax
+```sql
 On-Time Delivery % = 
 VAR TotalDelivered = CALCULATE(COUNTROWS(orders), orders[order_status] = "delivered")
 VAR OnTimeOrders = 
