@@ -1,0 +1,7 @@
+# --- Data Files ---
+# Ignore raw datasets 
+data/original/
+data/cleaned/*.csv
+*.zip
+*.csv
+
