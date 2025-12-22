@@ -101,35 +101,35 @@ CREATE TABLE order_reviews (
 
 -- 3. IMPORT DATA (The "COPY" Command)
 -- 1. Load Geolocation
-COPY geolocation FROM 'D:\Data_Science\Projects\Portfolio_Projects\Olist-Logistics-Analysis\data\cleaned\geolocation.csv' 
+COPY geolocation FROM 'D:\Data_Science\Projects\Portfolio_Projects\Olist-Logistics-Analysis\data\processed\geolocation.csv' 
 WITH (FORMAT csv, HEADER true, ENCODING 'UTF8');
 
 -- 2. Load Customers
-COPY customers FROM 'D:\Data_Science\Projects\Portfolio_Projects\Olist-Logistics-Analysis\data\cleaned\customers.csv' 
+COPY customers FROM 'D:\Data_Science\Projects\Portfolio_Projects\Olist-Logistics-Analysis\data\processed\customers.csv' 
 WITH (FORMAT csv, HEADER true, ENCODING 'UTF8');
 
 -- 3. Load Sellers
-COPY sellers FROM 'D:\Data_Science\Projects\Portfolio_Projects\Olist-Logistics-Analysis\data\cleaned\sellers.csv' 
+COPY sellers FROM 'D:\Data_Science\Projects\Portfolio_Projects\Olist-Logistics-Analysis\data\processed\sellers.csv' 
 WITH (FORMAT csv, HEADER true, ENCODING 'UTF8');
 
 -- 4. Load Products
-COPY products FROM 'D:\Data_Science\Projects\Portfolio_Projects\Olist-Logistics-Analysis\data\cleaned\products.csv' 
+COPY products FROM 'D:\Data_Science\Projects\Portfolio_Projects\Olist-Logistics-Analysis\data\processed\products.csv' 
 WITH (FORMAT csv, HEADER true, ENCODING 'UTF8');
 
 -- 5. Load Orders
-COPY orders FROM 'D:\Data_Science\Projects\Portfolio_Projects\Olist-Logistics-Analysis\data\cleaned\orders.csv' 
+COPY orders FROM 'D:\Data_Science\Projects\Portfolio_Projects\Olist-Logistics-Analysis\data\processed\orders.csv' 
 WITH (FORMAT csv, HEADER true, ENCODING 'UTF8');
 
 -- 6. Load Order Items
-COPY order_items FROM 'D:\Data_Science\Projects\Portfolio_Projects\Olist-Logistics-Analysis\data\cleaned\order_items.csv' 
+COPY order_items FROM 'D:\Data_Science\Projects\Portfolio_Projects\Olist-Logistics-Analysis\data\processed\order_items.csv' 
 WITH (FORMAT csv, HEADER true, ENCODING 'UTF8');
 
 -- 7. Load Order Payments
-COPY order_payments FROM 'D:\Data_Science\Projects\Portfolio_Projects\Olist-Logistics-Analysis\data\cleaned\order_payments.csv' 
+COPY order_payments FROM 'D:\Data_Science\Projects\Portfolio_Projects\Olist-Logistics-Analysis\data\processed\order_payments.csv' 
 WITH (FORMAT csv, HEADER true, ENCODING 'UTF8');
 
 -- 8. Load Order Reviews
-COPY order_reviews FROM 'D:\Data_Science\Projects\Portfolio_Projects\Olist-Logistics-Analysis\data\cleaned\order_reviews.csv' 
+COPY order_reviews FROM 'D:\Data_Science\Projects\Portfolio_Projects\Olist-Logistics-Analysis\data\processed\order_reviews.csv' 
 WITH (FORMAT csv, HEADER true, ENCODING 'UTF8');
 
 
