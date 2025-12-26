@@ -17,8 +17,8 @@
 - [Visual Insights (Q&A)](#-visual-insights-qa)
 - [Strategic Recommendations](#-strategic-recommendations)
 - [Technical Highlights (Code)](#-technical-highlights-code)
-- [Assumptions & Caveats](#-assumptions--caveats)
-- [Setup & Usage](#-setup--usage)
+- [Assumptions & Caveats](#assumptions--caveats)
+- [Setup & Usage](#setup--usage)
 - [Future Improvements](#-future-improvements)
 - [Author](#-author)
 
