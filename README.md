@@ -17,8 +17,8 @@
 - [Visual Insights (Q&A)](#-visual-insights-qa)
 - [Strategic Recommendations](#-strategic-recommendations)
 - [Technical Highlights (Code)](#-technical-highlights-code)
-- [Assumptions & Caveats](#assumptions--caveats)
-- [Setup & Usage](#setup--usage)
+- [Assumptions & Caveats](#-assumptions--caveats)
+- [Setup & Usage](#-setup--usage)
 - [Future Improvements](#-future-improvements)
 - [Author](#-author)
 
@@ -143,9 +143,7 @@ RETURN
 * **Data Date Range:** The dataset covers historical records from 2016–2018. Recent market trends or 2025 inflation data are not reflected in this analysis.
 
 ## ⚙️ Setup & Usage
-
 **Prerequisites:** Python 3.x, PostgreSQL, Power BI Desktop.
-
 1.  **Run the ETL Pipeline:**
     * Navigate to the `scripts/` folder.
     * Open and run `01_etl_pipeline.ipynb` to clean the raw data and generate the optimized CSV exports.
