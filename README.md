@@ -8,15 +8,8 @@
 
 > **A full-stack Business Intelligence project transforming 100k+ raw order records into a Star Schema Data Warehouse and an actionable Power BI Dashboard.**
 
-
-## 🎥 Dashboard Demo
-[![View Live Dashboard](https://img.shields.io/badge/View_Live_Dashboard-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)](https://app.powerbi.com/view?r=eyJrIjoiZjEzMjUzZjctNzQ4ZS00OWU1LTk5YTQtNzBhMDExYmJiYzkxIiwidCI6IjZiYTYzMzM5LTczNGYtNDdhMi05ZDhmLWY5NDk2YmM5NWI0MSIsImMiOjl9)
-
-![Dashboard Demo](assets/dashboard-demo.gif)
-
-*Click the yellow button above to interact with the dashboard directly.*
-
 ## 📖 Table of Contents
+- [Dashboard Demo](#-dashboard-demo)
 - [Repository Structure](#-repository-structure)
 - [Business Problem](#-business-problem)
 - [Solution Architecture](#-solution-architecture)
@@ -24,9 +17,17 @@
 - [Visual Insights (Q&A)](#-visual-insights-qa)
 - [Strategic Recommendations](#-strategic-recommendations)
 - [Technical Highlights (Code)](#-technical-highlights-code)
+- [Assumptions & Caveats](#-assumptions--caveats)
 - [Setup & Usage](#-setup--usage)
 - [Future Improvements](#-future-improvements)
+- [Author](#-author)
 
+## 🎥 Dashboard Demo
+[![View Live Dashboard](https://img.shields.io/badge/View_Live_Dashboard-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)](https://app.powerbi.com/view?r=eyJrIjoiZjEzMjUzZjctNzQ4ZS00OWU1LTk5YTQtNzBhMDExYmJiYzkxIiwidCI6IjZiYTYzMzM5LTczNGYtNDdhMi05ZDhmLWY5NDk2YmM5NWI0MSIsImMiOjl9)
+
+![Dashboard Demo](assets/dashboard-demo.gif)
+
+*Click the yellow button above to interact with the dashboard directly.*               
 
 ## 📂 Repository Structure
 ```text
@@ -136,7 +137,7 @@ RETURN
     DIVIDE(OnTimeOrders, TotalDelivered)
 ```
 
-### ⚠️ Assumptions & Caveats
+## ⚠️ Assumptions & Caveats
 * **Currency:** The source dataset is in Brazilian Reals (BRL). For this case study, values are formatted as **USD ($)** to simulate a US-based executive view.
 * **Missing Data:** ~0.2% of orders had missing geolocation data. These were excluded from map visuals to maintain accuracy but retained in revenue calculations to ensure total financial integrity.
 * **Data Date Range:** The dataset covers historical records from 2016–2018. Recent market trends or 2025 inflation data are not reflected in this analysis.
