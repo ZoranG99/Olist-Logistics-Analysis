@@ -31,14 +31,17 @@
 
 ## 📂 Repository Structure
 ```text
-├── assets/                            # Images and GIFs for the README
+├── assets/                          # Images and GIFs for the README
 ├── dashboard/
-│   └── olist_ecommerce.pbix           # Power BI Project File
+│   └── olist_ecommerce.pbix         # Power BI Project File
+├── data/                            # Data directory (Folders only, datasets ignored)
+│   ├── processed/                   # Cleaned data ready for analysis
+│   └── raw/                         # Original, unaltered datasets
 ├── scripts/
-│   ├── 01_etl_pipeline.ipynb          # Python ETL (Pandas)
-│   └── 02_warehouse_schema.sql        # SQL DDL & Import Scripts
-├── README.md                          # Project Documentation
-└── .gitignore                         # Files to exclude (e.g., raw data)
+│   ├── 01_etl_pipeline.ipynb        # Python ETL (Pandas)
+│   └── 02_warehouse_schema.sql      # SQL DDL & Import Scripts
+├── .gitignore                       # Rules to exclude datasets from GitHub
+└── README.md                        # Project Documentation
 ```
 
 ## 💼 Business Problem
