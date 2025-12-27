@@ -31,6 +31,7 @@
 
 ## 📂 Repository Structure
 ```text
+Olist-Logistics-Analysis/
 ├── assets/                          # Images and GIFs for the README
 ├── dashboard/
 │   └── olist_ecommerce.pbix         # Power BI Project File
