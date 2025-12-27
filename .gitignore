@@ -1,6 +1,9 @@
-# Ignore all CSV and ZIP files anywhere in the project
+# 1. Ignore all CSV and ZIP files everywhere
 **/*.csv
 **/*.zip
 
-# Ignore the entire data directory and all its subfolders
+# 2. Ignore everything inside the data folder
 data/
+
+# 3. Allow .gitkeep files through the filter
+!.gitkeep
