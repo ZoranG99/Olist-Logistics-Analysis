@@ -6,6 +6,7 @@
 - [Dashboard Demo](#-dashboard-demo)
 - [Repository Structure](#-repository-structure)
 - [Business Problem](#-business-problem)
+- [Data Source](#-data-source)
 - [Solution Architecture](#-solution-architecture)
 - [Data Modeling (Star Schema)](#-data-modeling-star-schema)
 - [Visual Insights (Q&A)](#-visual-insights-qa)
@@ -45,6 +46,9 @@ Olist-Logistics-Analysis/
 2.  **Logistics Opacity:** Operations teams lacked visibility into which states were causing delivery delays, leading to increased churn.
 
 **Goal:** Build a scalable BI solution to diagnose the root causes of negative reviews and optimize logistics performance.
+
+## 📊 Data Source
+The dataset used in this project is the **Brazilian E-Commerce Public Dataset by Olist**, which can be found on [Kaggle](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce). It contains information on 100,000 orders from 2016 to 2018 made at multiple marketplaces in Brazil.
 
 ## 🏗 Solution Architecture
 This project follows a professional **ETL (Extract, Transform, Load)** workflow:
@@ -142,13 +146,16 @@ RETURN
 
 ## ⚙️ Setup & Usage
 **Prerequisites:** Python 3.x, PostgreSQL, Power BI Desktop.
-1.  **Run the ETL Pipeline:**
+1. **Download the Data:**
+    * Download the raw CSV files from the [Olist Brazilian E-Commerce Dataset on Kaggle](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce).
+    * Place the files inside the `data/raw/` directory.
+2.  **Run the ETL Pipeline:**
     * Navigate to the `scripts/` folder.
     * Open and run `01_etl_pipeline.ipynb` to clean the raw data and generate the optimized CSV exports.
-2.  **Build the Data Warehouse:**
+3.  **Build the Data Warehouse:**
     * Open `scripts/02_warehouse_schema.sql` in your SQL editor (pgAdmin or DBeaver).
     * Execute the script to create the Star Schema tables and import the cleaned data.
-3.  **Explore the Dashboard:**
+4.  **Explore the Dashboard:**
     * Open `dashboard/olist_ecommerce.pbix` in Power BI Desktop.
     * *Note:* You may need to update the **Data Source Settings** to point to your local PostgreSQL instance and click **Refresh**.
 
